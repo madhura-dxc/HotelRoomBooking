@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Sep 26, 2017 2:28:45 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="org.me.Room.Booking" table="BOOKING">
+        <id name="bookId" type="java.lang.String">
+            <column name="BOOKID" />
+            <generator class="assigned" />
+        </id>
+        <property name="roomId" type="java.lang.String">
+            <column name="ROOMID" />
+        </property>
+        <property name="custName" type="java.lang.String">
+            <column name="CUSTNAME" />
+        </property>
+        <property name="city" type="java.lang.String">
+            <column name="CITY" />
+        </property>
+        <property name="bookDate" type="java.sql.Date">
+            <column name="BOOKDATE" />
+        </property>
+        <property name="chkDate" type="java.sql.Date">
+            <column name="CHKDATE" />
+        </property>
+    </class>
+</hibernate-mapping>
